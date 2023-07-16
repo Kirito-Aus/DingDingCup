@@ -1,10 +1,22 @@
 import pandas as pd
 import numpy as np
+# 是否需要新添加列
+needNewCol = True
+
 # 读取数据
 data = pd.read_csv('../UserUseSituationWithClassZtmp.csv')
 
+# 如果需要添加新列
+data['up_and_down_flow'] = data.apply(lambda row: row['up_flow'] + row['down_flow'], axis = 1)
+
+data.to_csv('tmpUpAndDownFlowTable.csv', index=False)
+
 # 选择需要处理的列
-cols_to_process = ['duration', 'up_flow', 'down_flow']
+if needNewCol:
+    cols_to_process = ['duration', 'up_flow', 'down_flow', 'up_and_down_flow']
+else:
+    cols_to_process = ['duration', 'up_flow', 'down_flow']
+
 
 # 对所选列进行 Min-Max 规范化
 # 将数据先归一化到[0,1]之间
@@ -27,4 +39,7 @@ data[cols_to_process] = (data[cols_to_process] - data[cols_to_process].min()) / 
 # 将数据限制在 [0,1] 范围内
 data[cols_to_process] = data[cols_to_process].clip(0, 1)
 
-data.to_csv('normalizedAndCleaned.csv', index=False)
+if needNewCol:
+    data.to_csv('normalizedAndCleanedAddSumCol.csv', index=False)
+else:
+    data.to_csv('normalizedAndCleaned.csv', index=False)
