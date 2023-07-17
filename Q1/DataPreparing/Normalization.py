@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 是否有Z值
-isContainZ = False
+isContainZ = True
 
 # 读取数据
 if isContainZ:
@@ -12,7 +12,7 @@ else:
     data = pd.read_csv('./UserUseSituation.csv')
 
 # 选择需要处理的列
-cols_to_process = ['duration', 'up_flow', 'down_flow', 'up_and_down_flow']
+cols_to_process = ['duration', 'up_flow', 'down_flow', 'up_and_down_flow', 'count']
 
 # 对所选列进行 Min-Max 规范化
 # 将数据先归一化到[0,1]之间
