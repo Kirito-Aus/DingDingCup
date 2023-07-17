@@ -31,8 +31,15 @@ for day in range(1, 22):
 
     # 对数据进行聚合
     print('对数据进行聚合')
-    grouped = df.groupby(['uid', 'app_class', 'app_type'])[['duration', 'up_flow', 'down_flow']].sum()
-    grouped = grouped.reset_index()
+    grouped = df.groupby(['uid', 'app_class', 'app_type']).agg({
+        'duration': 'mean',
+        'up_flow': 'mean',
+        'down_flow': 'mean',
+        'app_type': 'count'
+    })
+    # [['duration', 'up_flow', 'down_flow']].sum()
+
+    # grouped = grouped.reset_index()
 
     data.append(grouped)
     print('------------')
@@ -44,8 +51,11 @@ df = pd.concat(data, axis=0)
 # df.to_csv('df.csv', index=True)
 
 # 需要对输出的结果再进行一次合并
-grouped = df.groupby(['uid', 'app_class', 'app_type'])[['duration', 'up_flow', 'down_flow']].sum()
-grouped = grouped.reset_index()
+# grouped = df.groupby(['uid', 'app_class', 'app_type'])[['duration', 'up_flow', 'down_flow']].sum()
+grouped = df.groupby(['uid', 'app_class', 'app_type']).agg({
+    'duration': 'mean',
+})
+# grouped = grouped.reset_index()
 
 # 将结果写入文件
 if modifiedZ:
