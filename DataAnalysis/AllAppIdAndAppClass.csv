@@ -403,8 +403,8 @@ appid,app_type,app_class
 9539,usr,c
 22761,usr,g
 66,usr,j
-1324,用户,t
-366,预装,z
+1324,usr,t
+366,sys,z
 8018,usr,g
 21080,usr,j
 3443,sys,z
@@ -420,7 +420,6 @@ appid,app_type,app_class
 10745,usr,b
 18542,usr,z
 20359,usr,z
-8045,usr,t
 8045,usr,t
 50,sys,z
 11575,sys,z
@@ -1512,7 +1511,6 @@ appid,app_type,app_class
 22861,usr,t
 6070,usr,g
 5581,usr,t
-5581,usr,t
 12580,usr,k
 18847,usr,z
 2443,usr,l
@@ -1633,7 +1631,6 @@ appid,app_type,app_class
 7482,sys,z
 16340,usr,z
 7032,usr,z
-11235,usr,n
 11235,usr,n
 9117,usr,s
 20775,sys,z
@@ -2280,7 +2277,6 @@ appid,app_type,app_class
 4209,sys,z
 22159,sys,z
 4900,usr,b
-1818,usr,t
 1818,usr,t
 16600,usr,z
 6608,usr,z
@@ -3184,7 +3180,6 @@ appid,app_type,app_class
 21299,sys,z
 21318,usr,t
 23337,usr,j
-23337,usr,j
 4961,usr,z
 16339,sys,z
 19139,usr,t
@@ -3455,7 +3450,6 @@ appid,app_type,app_class
 11464,usr,t
 12994,usr,z
 12850,usr,z
-10097,usr,t
 10097,usr,t
 17738,usr,z
 22354,sys,z
@@ -4436,7 +4430,6 @@ appid,app_type,app_class
 6781,usr,t
 3141,usr,q
 15474,usr,c
-3509,usr,t
 3509,usr,t
 8675,usr,t
 15300,usr,t
@@ -6682,7 +6675,6 @@ appid,app_type,app_class
 9124,usr,z
 10851,usr,z
 19002,usr,n
-19002,usr,n
 16555,usr,z
 5987,usr,z
 23549,usr,z
@@ -7782,7 +7774,6 @@ appid,app_type,app_class
 4684,usr,t
 10908,usr,d
 2016,usr,t
-2016,usr,t
 15638,usr,z
 11210,usr,z
 6103,sys,z
@@ -8282,7 +8273,6 @@ appid,app_type,app_class
 21635,usr,z
 19075,sys,z
 6141,usr,j
-6141,usr,j
 16607,sys,z
 19572,usr,z
 14412,sys,z
@@ -8511,7 +8501,6 @@ appid,app_type,app_class
 10298,sys,z
 16818,usr,z
 18971,usr,z
-18095,usr,c
 18095,usr,c
 14360,usr,z
 22254,usr,z
@@ -8923,7 +8912,6 @@ appid,app_type,app_class
 9358,usr,z
 10230,usr,z
 18254,usr,z
-15463,usr,t
 15463,usr,t
 13736,usr,z
 18523,usr,z
@@ -11888,7 +11876,6 @@ appid,app_type,app_class
 5902,usr,z
 25104,usr,z
 13352,usr,z
-24807,sys,h
 24807,sys,h
 23846,usr,z
 29047,usr,z
@@ -26712,7 +26699,7 @@ appid,app_type,app_class
 57092,usr,z
 15921,usr,z
 27914,usr,z
-36220,预装,z
+36220,sys,z
 45653,usr,z
 55466,usr,t
 50780,usr,z
@@ -27876,7 +27863,7 @@ appid,app_type,app_class
 42595,usr,z
 26572,usr,z
 53485,usr,z
-550,预装,z
+550,sys,z
 59589,usr,z
 58063,usr,z
 32583,usr,z
@@ -28009,7 +27996,6 @@ appid,app_type,app_class
 59986,usr,z
 59302,usr,z
 59356,usr,z
-13982,usr,c
 13982,usr,c
 53669,usr,z
 58190,usr,z
@@ -29186,7 +29172,6 @@ appid,app_type,app_class
 33093,usr,z
 27203,usr,z
 61162,usr,t
-61162,usr,t
 1488,usr,z
 61205,usr,z
 61432,usr,z
@@ -30078,7 +30063,6 @@ appid,app_type,app_class
 19605,usr,z
 55749,usr,z
 66320,usr,z
-65489,usr,t
 65489,usr,t
 33751,usr,z
 35490,usr,z
