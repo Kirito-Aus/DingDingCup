@@ -4,7 +4,9 @@
 
 duration	up_flow	down_flow	up_and_down_flow	count flow_pers_avg
 
-每人每天**平均的**该类APP使用时长/上下行流量/次数/每秒消耗流量书
+每人每天每次**平均的**该类APP使用时长/上下行流量
+每人每天使用该APP的平均次数
+该APP每秒消耗流量数（在最后计算出所有其它值后进行up_and_down_flow/duration)
 
 
 ### AllAppIdAndAppClass.csv
