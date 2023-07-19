@@ -14,3 +14,6 @@ UserUseSituationWithZ.csv文件中
 
 ### NormalizedAndCleanedWithZ
 - 在UserUseSituationWithZ的基础上进行了数据归一化和数据清洗，利用Turkey箱线图计算异常值的方法去除了异常值，并且将数据归一化到[0,1]的区间
+### 需要南总提供
+- 20类不同的APP日均使用总时长
+- 21个数据表所有行数据总和
