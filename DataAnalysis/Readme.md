@@ -1,19 +1,19 @@
 # 数据处理部分
 
-AppClassStatisticsWithZ.csv
+### AppClassStatisticsWithZ.csv
 
 duration	up_flow	down_flow	up_and_down_flow	count flow_pers_avg
 
 每人每天**平均的**该类APP使用时长/上下行流量/次数/每秒消耗流量书
 
 
-AllAppIdAndAppClass.csv
+### AllAppIdAndAppClass.csv
 - **描述了**：在22天数据中所出现的全部的APPid，以及它的相关信息，对于没有给出Class类别的全部用Z来表示
 - 进行了数据清洗，将中文的‘用户’、‘预装’替换为‘usr’、‘sys’的数据
 - 添加了app_type列
 
 
-TypeAndClassRelation.csv
+### TypeAndClassRelation.csv
 - 分析了Type和Class之间的统计关系，可以使用卡方检验等方式来测试两列间的关联程度
 - 卡方检验结果如下：
 ```
