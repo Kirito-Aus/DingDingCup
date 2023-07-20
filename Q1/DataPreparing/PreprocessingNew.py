@@ -1,4 +1,5 @@
 import pandas as pd
+import time
 
 # 是否需要将原来没有ClassType的数据改成Z类型
 modifiedZ = True
@@ -41,7 +42,7 @@ for day in range(1, 22):
 
     # 对数据进行聚合
     print('对数据进行聚合')
-    grouped = df.groupby(['uid', 'app_class', 'app_type']).agg({
+    grouped = df.groupby(['uid', 'app_class', 'app_type'], as_index=False).agg({
         'duration': 'mean',
         'up_flow': 'mean',
         'down_flow': 'mean',
@@ -51,16 +52,14 @@ for day in range(1, 22):
 
     grouped = grouped.rename(columns={'start_day': 'count'})
 
-    # grouped = grouped.reset_index()
-
     data.append(grouped)
     print('------------')
 
 # 合并每天的数据
 print('开始合并每天的数据')
 df = pd.concat(data, axis=0)
-# # # 输出临时文件进行校验
-# df.to_csv('tmpdf.csv', index=True)
+
+df['use_day_count'] = 1
 
 # 需要对输出的结果再进行一次合并
 grouped = df.groupby(['uid', 'app_class', 'app_type']).agg({
@@ -68,15 +67,17 @@ grouped = df.groupby(['uid', 'app_class', 'app_type']).agg({
     'up_flow': 'mean',
     'down_flow': 'mean',
     'up_and_down_flow': 'mean',
-    'count': 'mean'
+    'count': 'mean',
+    'use_day_count': 'count'
 })
 
-# # grouped = grouped.reset_index()
+grouped['flow_pers_avg'] = grouped['up_and_down_flow'] / grouped['duration']
+
 
 # 将结果写入文件
 if modifiedZ:
     # 需要修改
-    grouped.to_csv('UserUseSituationWithClassZ.csv', index=True)
+    grouped.to_csv('UserUseSituationWithClassZ1.csv', index=True)
 else:
     # 不需要修改
-    grouped.to_csv('UserUseSituation.csv', index=True)
+    grouped.to_csv('UserUseSituation1.csv', index=True)
