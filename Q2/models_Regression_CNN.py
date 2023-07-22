@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 # 读取 CSV 文件
-df = pd.read_csv('Q2_Regression_Input_Normalized.csv')
+df = pd.read_csv('Q2_Regression_Input_limit_digits.csv')
 
 # 提取需要的列
 selected_columns = ['duration', 'up_and_down_flow', 'count', 'count_day_column', 'flow_pers_avg']

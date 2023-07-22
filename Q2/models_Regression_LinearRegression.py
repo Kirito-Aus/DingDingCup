@@ -1,11 +1,11 @@
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, explained_variance_score, mean_absolute_error
 import pandas as pd
 import numpy as np
 
 # 读取 CSV 文件
-df = pd.read_csv('Q2_Regression_Input_Normalized.csv')
+df = pd.read_csv('Q2_Regression_Input_limit_digits.csv')
 
 # 提取需要的列
 selected_columns = ['duration', 'up_and_down_flow', 'count', 'count_day_column', 'flow_pers_avg']
@@ -31,9 +31,14 @@ lr.fit(X_train, y_train.ravel())
 y_pred = lr.predict(X_test)
 
 # 计算准确率
-nmse = mean_squared_error(y_test, y_pred) / np.var(y_test)
+nmse = mean_squared_error(y_test, y_pred) / explained_variance_score(y_test, y_pred)
 
-print("NMSE:", nmse)
+# 计算平均绝对误差
+mae = mean_absolute_error(y_test, y_pred)
+
+# 计算均方根误差
+rmse = np.sqrt(mean_squared_error(y_test, y_pred))
+print("rmse:", rmse)
 
 # 将预测结果添加到测试集数据中
 df = pd.DataFrame(X_test)

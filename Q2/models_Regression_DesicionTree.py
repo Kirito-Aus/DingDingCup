@@ -1,11 +1,12 @@
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error
+from sklearn.metrics import f1_score, recall_score, roc_auc_score
 import pandas as pd
 import numpy as np
 
 # 读取 CSV 文件
-df = pd.read_csv('Q2_Regression_Input_Normalized.csv')
+df = pd.read_csv('Q2_Regression_Input_limit_digits.csv')
 
 # 提取需要的列
 selected_columns = ['duration', 'up_and_down_flow', 'count', 'count_day_column', 'flow_pers_avg']
@@ -37,6 +38,7 @@ nmse = mean_squared_error(y_test, y_pred) / np.var(y_test)
 print("NMSE:", nmse)
 # print(y_test[1:20])
 # print(y_pred[1:20])
+
 
 # 将预测结果添加到测试集数据中
 df = pd.DataFrame(X_test)

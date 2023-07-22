@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 # 读取 CSV 文件
-df = pd.read_csv('Q2_Regression_Input_Normalized.csv')
+df = pd.read_csv('Q2_Regression_Input_limit_digits.csv')
 
 # 提取需要的列
 selected_columns = ['duration', 'up_and_down_flow', 'count', 'count_day_column', 'flow_pers_avg']
@@ -16,6 +16,7 @@ y = df[selected_columns].to_numpy()
 # 划分数据集
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 42)
 
+print(y_train[1:20])
 
 # ---------------- SVM模型 ----------------
 
@@ -34,6 +35,8 @@ y_pred = svr.predict(X_test)
 nmse = mean_squared_error(y_test, y_pred) / np.var(y_test)
 
 print("NMSE:", nmse)
+print(y_test[1:20])
+print(y_pred[1:20])
 
 # 将预测结果添加到测试集数据中
 df = pd.DataFrame(X_test)
