@@ -2,9 +2,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import pandas as pd
+from sklearn.metrics import f1_score, recall_score, roc_auc_score
 
 # 读取 CSV 文件
-df = pd.read_csv('Q2_Classify_Input_Normalized.csv')
+df = pd.read_csv('Q2_Classify_Input_limit_digits.csv')
 
 # 提取需要的列
 selected_columns = ['duration', 'up_and_down_flow', 'count', 'count_day_column', 'flow_pers_avg']
@@ -36,6 +37,18 @@ accuracy = accuracy_score(y_test, y_pred)
 #     print(y_test[i])
 #     print(y_pred[i])
 print("Accuracy:", accuracy)
+
+# 计算F1 Score
+f1 = f1_score(y_test, y_pred)
+print("F1 Score:", f1)
+
+# 计算Recall
+recall = recall_score(y_test, y_pred)
+print("Recall:", recall)
+
+# 计算ROC AUC
+roc_auc = roc_auc_score(y_test, y_pred)
+print("ROC AUC:", roc_auc)
 
 # 将预测结果添加到测试集数据中
 df = pd.DataFrame(X_test)
