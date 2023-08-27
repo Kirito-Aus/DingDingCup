@@ -49,5 +49,5 @@
  'min', 'max', 'mean'
 ```
 
-# 归一化
+# 三、归一化
 MinMaxScaler
