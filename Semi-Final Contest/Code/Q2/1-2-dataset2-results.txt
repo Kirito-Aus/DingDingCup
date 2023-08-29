@@ -1,0 +1,140 @@
+class_ 1 处理中...
+XGBRegressor Accuracy:
+MMSE: 6.44, RMSE: 696109.58, MAE: 13954.00, NMSE: 41.48
+LinearRegression Accuracy:
+MMSE: 1.05, RMSE: 113162.84, MAE: 17420.45, NMSE: 1.10
+DecisionTreeRegressor Accuracy:
+MMSE: 4.05, RMSE: 437318.69, MAE: 6760.73, NMSE: 16.37
+class_ 2 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.00, RMSE: 7389532.36, MAE: 38373.76, NMSE: 1.00
+LinearRegression Accuracy:
+MMSE: 1.00, RMSE: 7389532.37, MAE: 38369.30, NMSE: 1.00
+DecisionTreeRegressor Accuracy:
+MMSE: 1.00, RMSE: 7389534.02, MAE: 38438.36, NMSE: 1.00
+class_ 3 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.00, RMSE: 201069.37, MAE: 1859.53, NMSE: 1.00
+LinearRegression Accuracy:
+MMSE: 1.00, RMSE: 200892.25, MAE: 2809.57, NMSE: 1.00
+DecisionTreeRegressor Accuracy:
+MMSE: 1.00, RMSE: 201086.29, MAE: 2284.65, NMSE: 1.00
+class_ 4 处理中...
+XGBRegressor Accuracy:
+MMSE: 1417.04, RMSE: 1367380.36, MAE: 10425.35, NMSE: 2007996.54
+LinearRegression Accuracy:
+MMSE: 149.43, RMSE: 144196.72, MAE: 62691.87, NMSE: 22330.32
+DecisionTreeRegressor Accuracy:
+MMSE: 1193.92, RMSE: 1152078.69, MAE: 7279.14, NMSE: 1425438.79
+class_ 5 处理中...
+XGBRegressor Accuracy:
+MMSE: 13.81, RMSE: 1488773.54, MAE: 12118.86, NMSE: 190.71
+LinearRegression Accuracy:
+MMSE: 1.22, RMSE: 131246.12, MAE: 35760.72, NMSE: 1.48
+DecisionTreeRegressor Accuracy:
+MMSE: 13.81, RMSE: 1488872.31, MAE: 12313.89, NMSE: 190.74
+class_ 6 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.72, RMSE: 1759215.21, MAE: 31189.95, NMSE: 2.95
+LinearRegression Accuracy:
+MMSE: 0.99, RMSE: 1010985.96, MAE: 80800.70, NMSE: 0.98
+DecisionTreeRegressor Accuracy:
+MMSE: 1.81, RMSE: 1848733.08, MAE: 35307.01, NMSE: 3.26
+class_ 7 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.50, RMSE: 47420.83, MAE: 1523.42, NMSE: 2.25
+LinearRegression Accuracy:
+MMSE: 2.49, RMSE: 78882.92, MAE: 30343.20, NMSE: 6.22
+DecisionTreeRegressor Accuracy:
+MMSE: 1.61, RMSE: 50982.54, MAE: 1693.14, NMSE: 2.60
+class_ 8 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.00, RMSE: 4907737.77, MAE: 43847.28, NMSE: 1.00
+LinearRegression Accuracy:
+MMSE: 1.00, RMSE: 4901876.03, MAE: 48801.45, NMSE: 1.00
+DecisionTreeRegressor Accuracy:
+MMSE: 1.00, RMSE: 4907940.53, MAE: 42680.41, NMSE: 1.00
+class_ 9 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.00, RMSE: 825865.69, MAE: 5052.83, NMSE: 1.00
+LinearRegression Accuracy:
+MMSE: 1.00, RMSE: 825871.55, MAE: 5020.20, NMSE: 1.00
+DecisionTreeRegressor Accuracy:
+MMSE: 1.00, RMSE: 825827.92, MAE: 5157.64, NMSE: 1.00
+class_ 10 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.20, RMSE: 90642.08, MAE: 1228.68, NMSE: 1.43
+LinearRegression Accuracy:
+MMSE: 1.00, RMSE: 75535.01, MAE: 1636.97, NMSE: 1.00
+DecisionTreeRegressor Accuracy:
+MMSE: 1.10, RMSE: 83546.37, MAE: 1088.29, NMSE: 1.22
+class_ 11 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.04, RMSE: 570.08, MAE: 267.80, NMSE: 1.08
+LinearRegression Accuracy:
+MMSE: 598.05, RMSE: 327999.62, MAE: 151882.21, NMSE: 357662.05
+DecisionTreeRegressor Accuracy:
+MMSE: 9523.52, RMSE: 5223174.95, MAE: 38593.81, NMSE: 90697499.48
+class_ 12 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.06, RMSE: 212.55, MAE: 34.59, NMSE: 1.13
+LinearRegression Accuracy:
+MMSE: 1.00, RMSE: 199.79, MAE: 26.54, NMSE: 1.00
+DecisionTreeRegressor Accuracy:
+MMSE: 1.55, RMSE: 311.02, MAE: 36.93, NMSE: 2.41
+class_ 13 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.15, RMSE: 193.93, MAE: 60.52, NMSE: 1.33
+LinearRegression Accuracy:
+MMSE: 1.00, RMSE: 167.52, MAE: 35.80, NMSE: 0.99
+DecisionTreeRegressor Accuracy:
+MMSE: 1.73, RMSE: 291.77, MAE: 55.55, NMSE: 3.01
+class_ 14 处理中...
+XGBRegressor Accuracy:
+MMSE: 3842.71, RMSE: 642023.81, MAE: 10016.76, NMSE: 14766392.11
+LinearRegression Accuracy:
+MMSE: 96.59, RMSE: 16137.21, MAE: 6599.30, NMSE: 9328.87
+DecisionTreeRegressor Accuracy:
+MMSE: 1280.94, RMSE: 214014.16, MAE: 1181.41, NMSE: 1640805.66
+class_ 15 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.00, RMSE: 466.23, MAE: 182.59, NMSE: 0.99
+LinearRegression Accuracy:
+MMSE: 0.96, RMSE: 450.85, MAE: 188.55, NMSE: 0.93
+DecisionTreeRegressor Accuracy:
+MMSE: 1.41, RMSE: 660.21, MAE: 221.25, NMSE: 1.99
+class_ 16 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.02, RMSE: 777.79, MAE: 361.25, NMSE: 1.04
+LinearRegression Accuracy:
+MMSE: 0.95, RMSE: 724.92, MAE: 327.28, NMSE: 0.90
+DecisionTreeRegressor Accuracy:
+MMSE: 1.41, RMSE: 1079.53, MAE: 432.77, NMSE: 2.00
+class_ 17 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.04, RMSE: 725.58, MAE: 315.06, NMSE: 1.08
+LinearRegression Accuracy:
+MMSE: 0.97, RMSE: 679.39, MAE: 282.37, NMSE: 0.95
+DecisionTreeRegressor Accuracy:
+MMSE: 1.61, RMSE: 1123.79, MAE: 419.24, NMSE: 2.59
+class_ 18 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.08, RMSE: 79.92, MAE: 14.35, NMSE: 1.17
+LinearRegression Accuracy:
+MMSE: 1.00, RMSE: 73.77, MAE: 9.65, NMSE: 1.00
+DecisionTreeRegressor Accuracy:
+MMSE: 1.56, RMSE: 115.57, MAE: 12.38, NMSE: 2.44
+class_ 19 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.12, RMSE: 357.30, MAE: 98.35, NMSE: 1.25
+LinearRegression Accuracy:
+MMSE: 0.99, RMSE: 314.54, MAE: 85.11, NMSE: 0.97
+DecisionTreeRegressor Accuracy:
+MMSE: 2.28, RMSE: 727.48, MAE: 163.67, NMSE: 5.20
+class_ 20 处理中...
+XGBRegressor Accuracy:
+MMSE: 1.12, RMSE: 192537.89, MAE: 3137.38, NMSE: 1.25
+LinearRegression Accuracy:
+MMSE: 1.00, RMSE: 171829.49, MAE: 3507.29, NMSE: 0.99
+DecisionTreeRegressor Accuracy:
+MMSE: 1.00, RMSE: 172853.96, MAE: 2791.46, NMSE: 1.01
